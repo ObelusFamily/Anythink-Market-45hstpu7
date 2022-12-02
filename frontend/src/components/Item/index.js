@@ -44,13 +44,20 @@ class Item extends React.Component {
     const canModify =
       this.props.currentUser &&
       this.props.currentUser.username === this.props.item.seller.username;
+
+      const itemImage = this.props.item.image ? (
+        this.probs.item.image
+      ) : (
+        "placeholder.png"
+      );
+
     return (
       <div className="container page" id="item-container">
         <div className="text-dark">
           <div className="row bg-white p-4">
             <div className="col-6">
               <img
-                src={this.props.item.image}
+                src={itemImage}
                 // src={this.props.item.image === "" ? "/placeholder.png" : this.props.item.image}
                 // src="/placeholder.png"
                 alt={this.props.item.title}
