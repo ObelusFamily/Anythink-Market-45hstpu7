@@ -29,11 +29,9 @@ const ItemPreview = (props) => {
     }
   };
 
-  const itemImage = this.props.item.image ? (
-    this.probs.item.image
-  ) : (
-    "placeholder.png"
-  );
+  const itemImage = this.props.item.image
+    ? this.probs.item.image
+    : "placeholder.png";
 
   return (
     <div
