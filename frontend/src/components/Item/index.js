@@ -46,7 +46,7 @@ class Item extends React.Component {
       this.props.currentUser.username === this.props.item.seller.username;
 
     const itemImage = this.props.item.image
-      ? this.probs.item.image
+      ? this.props.item.image
       : "placeholder.png";
 
     return (
